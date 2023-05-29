@@ -42,12 +42,14 @@ def after_text_2(message):
         driver.find_element_by_id("closeModalBtn").click()
         time.sleep(0.5)
         driver.find_element_by_class_name("download-items__btn").click()
-        filename = glob.glob('/Users/aleksandramirnova/Downloads/*.mp4')
+        filename = glob.glob('/Users/ejksi/Downloads/*.mp4')
         filename1 = filename[0]
         print(filename1)
         file = open(filename1, "rb")
         bot.send_video(message.chat.id, file, "here it is!")
-        os.remove()
+        time.sleep(2)
+        filename2 = f'{filename1}'
+        os.remove(filename2)
     except Exception as es:
         print('ex')
 
