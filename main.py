@@ -63,6 +63,9 @@ def after_text_2(message):
         os.remove(filename2)
     except Exception as es:
         print('ex')
+    finally:
+        driver.close()
+        driver.quit()
 
 @bot.message_handler(content_types=['text'])
 def get_answer(message):
