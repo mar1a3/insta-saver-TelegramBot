@@ -14,7 +14,7 @@ import glob
 
 
 # элементы бота
-api = '5999499263:AAEwA-THiPgM0sBAX6GJaUR18oLZHlmQbMY'
+api = ''
 bot = telebot.TeleBot(api)
 
 # элементы вэбрайвера
