@@ -1,10 +1,4 @@
 
-
-
-
-jjj
-
-driver = webdriver.Chrome(ChromeDriverManager().install())
 opts = Options()
 opts.add_experimental_option("detach", True)
 
