@@ -14,7 +14,7 @@ import glob
 options = webdriver.ChromeOptions()
 
 # user-agent
-options.add_argument("user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0")
+options.add_argument("")
 
 # for ChromeDriver version 79.0.3945.16 or over
 options.add_argument("--disable-blink-features=AutomationControlled")
